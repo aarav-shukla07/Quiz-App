@@ -1,0 +1,74 @@
+/*general reset and body styling*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Intro-container */
+.intro-container {
+    text-align: center;
+    background: #d7d2cc;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+/*Logo and title styling*/
+.logo h1 {
+    font-size: 3em;
+    color: #304352;
+    animation: slideInFromTop 2s ease-out;
+}
+/*Intro text animation*/
+.intro-text p {
+    font-size: 1.5em;
+    color: #555;
+    opacity: 0;
+    animation: fadeInText 2s ease-out 1s forwards;
+}
+/* Start button styling */
+.start-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background: #304352;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.start-btn:hover {
+    background: #304352;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
